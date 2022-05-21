@@ -18,7 +18,7 @@ public class Main {
         vendorList.add("GCP");
         vendorList.add("Azure");
         vendorList.add("AWS");
-        storage.checkStorageNames(vendorList);
+        storage.showStorageNamesBy(vendorList);
 
     }
 

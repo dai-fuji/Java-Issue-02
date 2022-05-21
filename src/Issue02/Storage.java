@@ -28,17 +28,15 @@ public class Storage {
 
     }
 
-    public void checkStorageNames(List<String> vendorList) {
+    public void showStorageNamesBy(List<String> vendorList) {
         System.out.println("ストレージサービスの一覧を表示します。");
         for (String vendorName : vendorList) {
             if (vendorName == "AWS") {
                 System.out.println("Simple Storage Service");
             } else if (vendorName == "GCP") {
                 System.out.println("GCS");
-                ;
             } else if (vendorName == "Azure") {
                 System.out.println("Azure Blob Storage");
-                ;
             }
         }
     }
@@ -50,14 +48,5 @@ public class Storage {
     public String getStorageName() {
         return storageName;
     }
-
-    public void setVendorName(String vendorName) {
-        this.vendorName = vendorName;
-    }
-
-    public void setStorageName(String storageName) {
-        this.storageName = storageName;
-    }
-
 
 }
